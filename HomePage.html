@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MtlTladiAccountants.co.za</title>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="HomePage.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!------modifications-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> <!------modifications-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a><img class="img-logo" src="PICTURES/RLogo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i ><img class="img-bar1"  src="PICTURES/close.png"  onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a></li>
+                        <li><a href="Services.html">Service</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="AboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <i ><img class="img-bar" src="PICTURES/menu.png" alt="menu button"  onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+         <!--------javascript for side menu--->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Our Accounting Firm</h2>
+        <p>Providing expert financial advice and services for your business.</p>
+        <a href="Contact.html" class="btn">Get in Touch</a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <div class="service-content">
+            <h3>Tax Planning</h3>
+            <p>Optimize your tax strategy and minimize your tax liabilities.</p>
+        </div>
+        <div class="service-image">
+            <img src="PICTURES/SLIDE1.jpg" alt="Tax Planning">
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-content">
+            <h3>Financial Advisory</h3>
+            <p>Expert advice to guide your business decisions.</p>
+        </div>
+        <div class="service-image">
+            <img src="PICTURES/SLIDE2.jpg" alt="Financial Advisory">
+        </div>
+    </div>
+    <div class="service-item">
+        <div class="service-content">
+            <h3>Audit & Assurance</h3>
+            <p>Reliable audit services to ensure compliance and accuracy.</p>
+        </div>
+        <div class="service-image">
+            <img src="PICTURES/SLIDE3.jpg" alt="Audit & Assurance">
+        </div>
+    </div>
+    <div>
+        <a href="Services.html" class="btn">More Info</a>
+    </div>
+    
+</section>
+
+<section id="about" class="about">
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are a leading accounting firm with over 10 years of experience.</p>
+    </div>
+    <div class="image">
+        <img src="PICTURES/SLIDE1.jpg" alt="About Us">
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <p>&coprod; Office No:4 ~ 42 Schoeman Street, Polokwane ~ 0699</p>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="PICTURES/F.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/leslythe1st?lang=en" target="_blank">
+                <img src="PICTURES/TW.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/leslythe1st/" target="_blank">
+                <img src="PICTURES/IG.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="PICTURES/LI.png" alt="LinkedIn">
+            </a>
+            <a href="#" target="_blank">
+                <img src="PICTURES/whatss.png" alt="Whatsapp">
+            </a>
+        </div>
+        <p>&copy; 2012 MTL TLADI Accountants. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
